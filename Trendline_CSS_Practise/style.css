@@ -89,11 +89,11 @@ body,html{
 .elem{
     flex-shrink: 0;
     height: 100%;
-    width: 50%;
+    width: 70%;
     display: flex;
-    border: 2px solid black;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
 }
 
 #pic{
@@ -101,4 +101,18 @@ body,html{
     height: 50%;
     width: 100%;
     border: 2px solid green;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#pic::-webkit-scrollbar{
+    display: none;
+}
+
+#pic img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

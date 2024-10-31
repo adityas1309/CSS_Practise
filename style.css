@@ -12,33 +12,52 @@ body,html{
 #main{
     height: 100%;
     width: 100%;
-    background-color: #ededed;
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
-
-#left{
+    background-color: whitesmoke;
     display: grid;
     grid-template-rows: 50% 50%;
 }
 
-#right{
+#left{
     display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#right{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+}
+
+#right, #right .rect{
+    transform: rotateX(180deg);
+}
+
+#right::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+    width: 12px;
+}
+
+#right::-webkit-scrollbar-thumb{
+    background-color: orangered;
 }
 
 #pic{
+    align-self: center;
     justify-self: center;
     contain: content;
+    padding-left: 10em;
 }
 
 #pic img{
-    height: 100%;
-    width: 100%;
+    height: 60%;
+    width: 60%;
 }
 
 #title_txt h1{
     font-size: 8vw;
     margin: 20px 30px;
+    font-weight: lighter;
     line-height: 9.5vw;
     font-family: "Lucida Console", "Courier New", monospace;
 }
@@ -51,19 +70,24 @@ body,html{
 }
 
 .rect img{
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
+    margin: 8px 10px 8px 10px;
     border-radius: 6%;
 }
 
+.cont{
+    flex-shrink: 0;
+}
+
 .rect{
-    height: 12rem;
-    width: 16rem;
+    height: 100%;
+    width: 100%;
     justify-self: center;
-    margin-top: 10px;
 }
 
 .cont a{
-    padding-left: 2.5em;
+    color: black;
+    padding-left: 1px;
     font-size: 1.5em;
 }

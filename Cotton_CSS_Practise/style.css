@@ -8,3 +8,129 @@ body,html{
     height: 100%;
     width: 100%;
 }
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px 90px;
+    padding-top: 150px;
+}
+
+#left{
+    height: 100%;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+#right{
+    height: 100%;
+    width: 50%;
+    padding: 70px 150px 0px 90px;
+    position: relative;
+}
+
+#colors{
+    border: 2px solid black;
+    border-radius: 50px;
+    width: fit-content;
+    display: flex;
+    padding: 6px;
+    margin-bottom: 35px;
+}
+
+#col1{
+    background-color: #9c5c5c;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+    margin-left: 16px;
+}
+
+#col2{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+#tit h1{
+    font-family: "Work Sans";
+    font-size: 130px;
+    font-weight: 400;
+    line-height: 120px;
+}
+
+#txt{
+    width: 50%;
+}
+
+#txt h4{
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+#right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#top{
+    display: flex;
+    justify-content: space-between;
+}
+
+#top p{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#top h4{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+#top i{
+    color: gold;
+}
+
+#big-c{
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    top: 35%;
+    right: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#big-c p{
+    font-size: 15px;
+    color: white;
+    font-family: "Work Sans";
+    font-weight: 300;
+}
+
+#rotated{
+    position: absolute;
+    transform-origin: 0 0;
+    rotate: -90deg;
+    left: 7%;
+    bottom: 0%;
+}
+
+#rotated h3{
+    font-size: 24px;
+}

@@ -3,51 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
-    <title>Trying to do better</title>
 </head>
 <body>
-    <div id="main">
-        <div id="left">
-            <div id="title_txt">
-                <h1>Crafting<br>Creativity</h1>
-                <h3>Showcasing my HTML & CSS projects</h3>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 8">
+            <div class="item" style="--position: 1">
+                <a href="../Fashion_CSS_Practise/index.html">
+                    <img src="../Web1.png">
+                </a>
             </div>
-            <div id="pic">
-                <img src="./image.jpg">
+            <div class="item" style="--position: 2">
+                <a href="../Jacket_CSS_Practise/index.html">
+                    <img src="../Web2.png">
+                </a>
+            </div>
+            <div class="item" style="--position: 3">
+                <a href="../Cotton_CSS_Practise/index.html">
+                    <img src="../Web3.png">
+                </a>
+            </div>
+            <div class="item" style="--position: 4">
+                <a href="../Trendline_CSS_Practise/index.html">
+                    <img src="../Web4.png">
+                </a>
+            </div>
+            <div class="item" style="--position: 5">
+                <a href="../Fashion_CSS_Practise/index.html">
+                    <img src="../Web1.png">
+                </a>
+            </div>
+            <div class="item" style="--position: 6">
+                <a href="../Jacket_CSS_Practise/index.html">
+                    <img src="../Web2.png">
+                </a>
+            </div>
+            <div class="item" style="--position: 7">
+                <a href="../Cotton_CSS_Practise/index.html">
+                    <img src="../Web3.png">
+                </a>
+            </div>
+            <div class="item" style="--position: 8">
+                <a href="../Trendline_CSS_Practise/index.html">
+                    <img src="../Web4.png">
+                </a>
             </div>
         </div>
-        <div id="right">
-            <div class="cont">
-                <div class="rect">
-                    <a href="./Fashion_CSS_Practise/index.html">
-                        <img src="./Web1.png">
-                    </a>
-                </div>
+        <div class="content">
+            <h1 data-content="CRAFTING CREATIVITY">
+                CRAFTING CREATIVITY
+            </h1>
+            <div class="author">
+                <h2>ADITYA SINGH</h2>
+                <p><b>Web Design</b></p>
+                <p>
+                    Showcasing my HTML & CSS projects
+                </p>
             </div>
-            <div class="cont">
-                <div class="rect">
-                    <a href="./Jacket_CSS_Practise/index.html">
-                        <img src="./Web2.png">
-                    </a>
-                </div>
-            </div>
-            <div class="cont">
-                <div class="rect">
-                    <a href="./Cotton_CSS_Practise/index.html">
-                        <img src="./Web3.png">
-                    </a>
-                </div>
-            </div>
-            <div class="cont">
-                <div class="rect">
-                    <a href="./Trendline_CSS_Practise/index.html">
-                        <img src="./Web4.png">
-                    </a>
-                </div>
-            </div>
+            <div class="model"></div>
         </div>
     </div>
+    
 </body>
 </html>
